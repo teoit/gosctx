@@ -1,8 +1,11 @@
 # gosctx
 golang service context
 
+# install
+go get -u github.com/teoit/gosctx@latest
 
 # use gosctx
+
 ```base
 var (
 	serviceName = "server-service"
@@ -19,4 +22,11 @@ func newServiceCtx() sctx.ServiceContext {
 		sctx.WithComponent(discord.NewDiscordClient(configs.KeyDiscordSMS)),
 	)
 }
+```
+
+## git tag
+```base 
+git tag v0.1.1
+
+git push origin v0.1.1
 ```
